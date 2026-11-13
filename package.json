@@ -28,7 +28,8 @@
     "dompurify": "2.2.7",
     "fastestsmallesttextencoderdecoder": "^1.0.22",
     "minilog": "3.1.0",
-    "transformation-matrix": "1.15.0"
+    "transformation-matrix": "1.15.0",
+    "scratch-render-fonts": "git+https://github.com/gvbvdxxmod2/scratch-render-fonts"
   },
   "devDependencies": {
     "babel-core": "6.26.0",

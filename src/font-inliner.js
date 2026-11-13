@@ -42,12 +42,8 @@ const inlineSvgFonts = function (svgString, customFontFaces = {}) {
             FONTS[xmlEscape(families)] = style;
         }
     }
-    try {
-        // We already know these don't need to be XML escaped
-        Object.assign(FONTS, getFonts());
-    } catch (e) {
-        // getFonts fails in tests because it uses some webpack tricks. This is safe to ignore.
-    }
+    // We already know these don't need to be XML escaped
+    Object.assign(FONTS, getFonts());
 
     // Collect fonts that need injection.
     const fontsNeeded = new Set();
